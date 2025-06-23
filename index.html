@@ -372,6 +372,25 @@
             color: #a0a0a0;
         }
 
+        /* Friendly Links */
+        .friendly-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            position: relative;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .friendly-links a:hover {
+            color: #00d4ff;
+            background: rgba(0, 212, 255, 0.1);
+            border-color: rgba(0, 212, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
@@ -504,6 +523,12 @@
     </section>
 
     <footer>
+        <div style="margin-bottom: 20px;">
+            <h3 style="color: #00d4ff; margin-bottom: 15px; font-size: 1.2rem;">Friendly Links</h3>
+            <div class="friendly-links" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="https://link.zhihu.com/?target=https://minimax-m1.com/" target="_blank" rel="noopener noreferrer">MiniMax-M1</a>
+            </div>
+        </div>
         <p>&copy; 2024 Flux Kontext. All rights reserved. Revolutionizing creativity through AI.</p>
     </footer>
 
